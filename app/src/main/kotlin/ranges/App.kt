@@ -6,6 +6,8 @@ object Ranges {
 
     val A_UNTIL_D = ('a' until 'd')
 
+    // https://kotlinlang.org/docs/whatsnew1720.html#preview-of-the-operator-for-creating-open-ended-ranges
+    // -> How to enable the ..< operator
     @OptIn(ExperimentalStdlibApi::class)
     val A_NEW_UNTIL_D = ('a'..<'d')
 

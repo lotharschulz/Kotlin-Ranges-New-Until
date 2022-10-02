@@ -4,6 +4,8 @@ plugins {
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
+    // https://kotlinlang.org/docs/whatsnew1720.html#preview-of-the-operator-for-creating-open-ended-ranges
+    // -> How to enable the ..< operator
     kotlinOptions { languageVersion = "1.8" }
 }
 
