@@ -1,4 +1,4 @@
-# Kotlin Ranges Creation Options
+# Kotlin Ranges Creation Options with rangeUntil operator
 
 ## run
 
