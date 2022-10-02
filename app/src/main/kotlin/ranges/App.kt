@@ -6,9 +6,10 @@ object Ranges {
 
     val A_UNTIL_D = ('a' until 'd')
 
-    val A_RANGETO_D = ('a'.rangeTo('d'))
+    @OptIn(ExperimentalStdlibApi::class)
+    val A_NEW_UNTIL_D = ('a'..<'d')
 
-//    val A_RANGETO_NEW_D = ('a'..<'d')
+    val A_RANGETO_D = ('a'.rangeTo('d'))
 
     val A_DOWNTO_D = ('d'.downTo('a'))
 
@@ -20,15 +21,16 @@ object Ranges {
         get() {
             return A_UNTIL_D.joinToString(",")
         }
+    val untilRangeNew_1_7_20: String
+        get() {
+            return A_NEW_UNTIL_D.joinToString(",")
+        }
+
     val rangeTo: String
         get() {
             return A_RANGETO_D.joinToString(",")
         }
 
-//    val rangeToNew_1_7_20: String
-//        get() {
-//            return A_RANGETO_NEW_D.joinToString(",")
-//        }
     val downTo: String
         get() {
             return A_DOWNTO_D.joinToString(",")
@@ -37,9 +39,10 @@ object Ranges {
 
 fun main() {
     println(
-        "dotdotRange: ${Ranges.dotdotRange} \n" + "untilRange: ${Ranges.untilRange} \n" +
-            "rangeTo: ${Ranges.rangeTo} \n" +
-//      "rangeTo new 1.7.20: ${Ranges.rangeToNew_1_7_20} \n" +
-            "downTo: ${Ranges.downTo} \n"
+        "dotdotRange: ${Ranges.dotdotRange} \n" +
+                "untilRange: ${Ranges.untilRange} \n" +
+                "untilRange new 1.7.20: ${Ranges.untilRangeNew_1_7_20} \n" +
+                "rangeTo: ${Ranges.rangeTo} \n" +
+                "downTo: ${Ranges.downTo} \n"
     )
 }
