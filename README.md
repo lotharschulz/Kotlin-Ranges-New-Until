@@ -13,4 +13,4 @@
 
 ##### blog post
 
-[Kotlin Ranges Creation Options](https://www.lotharschulz.info/2019/06/17/kotlin-ranges-creation-options/)
+[Kotlin Ranges Creation Options]()
