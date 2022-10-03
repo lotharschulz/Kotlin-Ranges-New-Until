@@ -2,7 +2,7 @@ val A_TO_D = ('a'..'d')
 val A_UNTIL_D = ('a' until 'd')
 val A_RANGETO_D = ('a'.rangeTo('d'))
 @OptIn(kotlin.ExperimentalStdlibApi::class)
-val A_NEW_UNTIL_D = ('a'..<'d')
+val A_NEW_UNTIL_D = ('a' ..< 'd')
 val A_DOWNTO_D = ('d'.downTo('a'))
 
 val dotdotRange: String
