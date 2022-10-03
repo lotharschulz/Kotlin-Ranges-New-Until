@@ -13,4 +13,4 @@
 
 ##### blog post
 
-[Kotlin Ranges Creation Options]()
+[Kotlin Ranges Creation Options](https://www.lotharschulz.info/2022/10/03/setup-new-kotlin-range-operator-rangeuntil/)
